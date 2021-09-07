@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="webrtc_client.js"></script>
+		
+	</head>
+	 
+	<body>
+		<div id="video-container" style="width:800px; margin:0 auto; margin-top: 100px">
+		  <div style="height:500px; border-style: solid; text-align: center; background-color: lightgray;padding-top:20px">
+			<div style="height:350">
+				<video id="received_video" autoplay></video>
+			</div>
+			<div id="waiting-text">
+				<span>Waiting for the video to be loaded...</span>
+			</div>
+			<br/>
+			<select name="bitrate" id="bitrate-selector" disabled onchange="alert('Selected bitrate')" style="margin:0 auto; width:200px;">
+			  <option value="" selected>Select a bitrate</option>
+			  <option value="br1">Bitrate1</option>
+			  <option value="br2">Bitrate2</option>
+			  <option value="br3">Bitrate3</option>
+			  <option value="br4">Bitrate4</option>
+			</select>
+		  </div>
+		</div>
+	</body>
+</html>
